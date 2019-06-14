@@ -19,4 +19,14 @@
 
     <packaging>jar</packaging>
 
+    <dependencies>
+
+        <dependency>
+            <groupId>cn.tenbit.basic</groupId>
+            <artifactId>tenbit-core</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+
+    </dependencies>
+
 </project>
