@@ -13,11 +13,15 @@ public class SimpleMusicPlayer implements MusicPlayer {
 
     private MusicDecoder decoder = new SimpleMusicDecoder();
 
+    private SimpleMusicPlayerAdapter adapter = new SimpleMusicPlayerAdapter();
+
     @Override
     public void play(String file) {
-        doPlay(file);
+        adapter.play(file);
+        // doPlay(file);
     }
 
+    @Deprecated
     private void doPlay(String file) {
         MusicTypeEnums type = detector.detect(file);
         HareAssertUtils.notNull(type, "file not support");

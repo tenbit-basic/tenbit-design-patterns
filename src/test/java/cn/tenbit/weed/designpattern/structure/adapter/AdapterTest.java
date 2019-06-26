@@ -11,16 +11,16 @@ public class AdapterTest {
 
     @Test
     public void test() {
-        final MusicPlayer simpleMusicPlayer = new SimpleMusicPlayer();
-        HareInvokeUtils.invokeWithSwallow(() -> simpleMusicPlayer.play("hello.mp3"));
-        HareInvokeUtils.invokeWithSwallow(() -> simpleMusicPlayer.play("hello.acr"));
+        final MusicPlayer simpleMusicPlayer0 = new SimpleMusicPlayer0();
+        HareInvokeUtils.invokeWithSwallow(() -> simpleMusicPlayer0.play("hello.mp3"));
+        HareInvokeUtils.invokeWithSwallow(() -> simpleMusicPlayer0.play("hello.acr"));
 
         final MusicPlayer smartMusicPlayer = new SmartMusicPlayer();
         HareInvokeUtils.invokeWithSwallow(() -> smartMusicPlayer.play("hello.mp3"));
         HareInvokeUtils.invokeWithSwallow(() -> smartMusicPlayer.play("hello.acr"));
 
-        final MusicPlayer simpleAdaptedMusicPlayer = new SimpleAdaptedMusicPlayer();
-        HareInvokeUtils.invokeWithSwallow(() -> simpleAdaptedMusicPlayer.play("hello.mp3"));
-        HareInvokeUtils.invokeWithSwallow(() -> simpleAdaptedMusicPlayer.play("hello.acr"));
+        final MusicPlayer simpleMusicPlayer = new SimpleMusicPlayer();
+        HareInvokeUtils.invokeWithSwallow(() -> simpleMusicPlayer.play("hello.mp3"));
+        HareInvokeUtils.invokeWithSwallow(() -> simpleMusicPlayer.play("hello.acr"));
     }
 }
