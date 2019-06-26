@@ -6,16 +6,16 @@ import cn.tenbit.weed.designpattern.behavior.singleton.Singleton;
  * @Author bangquan.qian
  * @Date 2019-06-26 14:50
  */
-public class UnsafeLazy2Singleton implements Singleton {
+public class UnsafeLazySingleton2 implements Singleton {
 
-    private static volatile UnsafeLazy2Singleton INSTANCE;
+    private static volatile UnsafeLazySingleton2 INSTANCE;
 
-    private UnsafeLazy2Singleton() {
+    private UnsafeLazySingleton2() {
     }
 
-    public static UnsafeLazy2Singleton getInstance() {
+    public static UnsafeLazySingleton2 getInstance() {
         if (INSTANCE == null) {
-            INSTANCE = new UnsafeLazy2Singleton();
+            INSTANCE = new UnsafeLazySingleton2();
         }
         return INSTANCE;
     }

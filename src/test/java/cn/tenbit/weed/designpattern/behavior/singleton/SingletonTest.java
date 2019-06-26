@@ -2,7 +2,7 @@ package cn.tenbit.weed.designpattern.behavior.singleton;
 
 import cn.tenbit.hare.core.lite.function.HareExecutor;
 import cn.tenbit.hare.core.lite.util.HarePrintUtils;
-import cn.tenbit.weed.designpattern.behavior.singleton.unsafe.UnsafeLazy2Singleton;
+import cn.tenbit.weed.designpattern.behavior.singleton.unsafe.UnsafeLazySingleton2;
 import cn.tenbit.weed.designpattern.behavior.singleton.unsafe.UnsafeLazySingleton;
 import org.junit.Test;
 
@@ -66,7 +66,7 @@ public class SingletonTest {
     @Test
     public void test7() {
         test0(() -> {
-            Singleton instance = UnsafeLazy2Singleton.getInstance();
+            Singleton instance = UnsafeLazySingleton2.getInstance();
             HarePrintUtils.console(instance.hashCode());
         });
     }
