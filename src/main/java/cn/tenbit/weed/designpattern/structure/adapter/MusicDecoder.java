@@ -7,5 +7,4 @@ package cn.tenbit.weed.designpattern.structure.adapter;
 public interface MusicDecoder {
 
     byte[] decode(String file);
-    
 }
