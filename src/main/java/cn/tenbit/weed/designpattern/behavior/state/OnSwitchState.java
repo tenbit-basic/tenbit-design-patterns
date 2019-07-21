@@ -10,7 +10,7 @@ public class OnSwitchState extends AbstractSwitchState implements SwitchState {
 
     @Override
     public void doAction(SwitchContext context) {
-        HarePrintUtils.console("OnSwitchState");
         super.doAction(context);
+        HarePrintUtils.console("OnSwitchState", context.getState());
     }
 }

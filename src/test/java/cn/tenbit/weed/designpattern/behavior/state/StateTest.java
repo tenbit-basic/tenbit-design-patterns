@@ -13,5 +13,7 @@ public class StateTest {
         Switch s = new Switch();
         s.on();
         s.off();
+
+        s.auto();
     }
 }
